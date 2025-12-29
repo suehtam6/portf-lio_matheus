@@ -7,6 +7,9 @@ body {
     text-align: center;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 #home{
     width: 100%;
     height: 100vh;
@@ -34,12 +37,12 @@ body {
 .perfilH1{
     font-size: 70px;
     font-weight: bold;
-    color: red;
+    color: #238636;
 }
 
 .perfilH1:hover{
     transition: 0.5s;
-    color: purple;
+    color: gold;
 }
 
 

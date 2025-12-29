@@ -22,7 +22,7 @@ header {
 
 .logo:hover{
     transition: 0.5s;
-    color: gray;
+    color: gold;
 }
 
 .logo::before{
@@ -49,10 +49,13 @@ header {
     font-weight: 800;
 }
 
+.nav-item:hover{
+  transition: 0.5s;
+  color: gold;
+}
 
 
 
-/* From Uiverse.io by gagan-gv */ 
 .btn {
   width: 150px;
   height: 50px;
