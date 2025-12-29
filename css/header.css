@@ -5,21 +5,46 @@ header {
     padding: 28px 8%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #f6f8fa;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.774);
     border-bottom: 2px solid #e7ebef;
+    font-weight: bold;
+    font-size: 1rem;
+    position: fixed;
 
 }
 
+.logo{
+    font-size: 1rem;
+    width: 20%;
+    color: #f5f5f5;
+}
+
+.logo:hover{
+    transition: 0.5s;
+    color: gray;
+}
+
+.logo::before{
+    content: "<";
+    font-size: 1rem;
+    
+}
+.logo::after{
+    content: "/>";
+    font-size: 1rem;
+}
+
+
 #navbar{
-    width: 100%;
+    width: 50%;
+    color: #fafafa;
 }
 
 #nav-list {
     display: flex;
     justify-content: center;
     gap: 30px;
-    font-size: 20px;
     font-weight: 800;
 }
 
@@ -32,7 +57,6 @@ header {
   border-radius: 5px;
   border: none;
   transition: all 0.5s ease-in-out;
-  font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   display: flex;
