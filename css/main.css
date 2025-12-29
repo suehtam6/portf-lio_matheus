@@ -130,6 +130,7 @@ body {
     background-color: #666;
     margin: 20px;
     border: solid 2px rgb(255, 255, 255);
+    margin-bottom: 10vh;
 }
 
 .tech img{
@@ -171,4 +172,55 @@ body {
     transition: 0.5s;
     border: solid 2px rgb(255, 255, 255);
     background:linear-gradient(red,blue,green);
+}
+
+#projetos{
+    width: 100%;
+    margin-top: 20vh;
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.tituloProjeto{
+    
+    width: 100vw;
+    justify-content: center;
+    font-size: 30vh;
+    background: linear-gradient(#666, #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container_imagens{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.projeto::before{
+    content: "Aperte e veja completo";
+    background-color: #0009;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    font-weight: 700;
+    transform: translateY(100%);
+    transition: transform .5s;
+
+}
+
+.projeto:hover::before{
+    transform: translateY(0%);
+}
+
+.projeto img{
+    width: 200px;
+    border: #ffffff solid 3px;
+    height: 200px;
 }
