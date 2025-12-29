@@ -1,0 +1,8 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    transition: background-color 0.8s, color 0.8s;
+    background-color: #ffffff;
+    gap: 500px;
+    text-align: center;
+}
