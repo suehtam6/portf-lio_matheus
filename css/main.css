@@ -3,7 +3,7 @@ body {
     color: black;
     transition: background-color 0.8s, color 0.8s;
     background-color: #ffffff;
-    gap: 500px;
+    overflow-x: hidden;
     text-align: center;
 }
 
@@ -37,11 +37,17 @@ body {
     color: red;
 }
 
+.perfilH1:hover{
+    transition: 0.5s;
+    color: purple;
+}
+
+
 .container_inicial img{
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
-    border: solid 3px black;
+    border: solid 3px rgb(255, 255, 255);
     
 }
 
@@ -49,5 +55,120 @@ body {
 #sobre{
     width: 100%;
     height: 100vh;
+    display: flex;
     background-color: black;
+}
+
+
+.titulo{
+    width: 100vw;
+    justify-content: center;
+    font-size: 30vh;
+    margin-top: 50px;
+    background: linear-gradient(#666, #000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container_sobreMim{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.quemSou{
+    font-size: 60px;
+    color: #666;
+    font-weight: 800;
+    background-color:#000000;
+    
+}
+
+.descricao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.descricao p{
+    width: 50%;
+    height: 40vh;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.541);
+}
+
+
+.habilidades{
+    width: 100%;
+    height: 50%;
+    background-color: #000;
+}
+.tecnologias{
+    color: #ffffff;
+    font-size: 60px;
+    margin-top: 50px;
+    font-weight: 800;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    
+}
+.tech{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #666;
+    margin: 20px;
+    border: solid 2px rgb(255, 255, 255);
+}
+
+.tech img{
+    width: 100px;
+    height: 100px;
+}
+
+.java:hover{
+    transition: 0.5s;
+    border: solid 2px rgb(255, 255, 255);
+    background-color: red;
+}
+
+.html:hover{
+    transition: 0.5s;
+    border: solid 2px rgb(255, 255, 255);
+    background-color: orange;
+}
+
+.css:hover{
+    transition: 0.5s;
+    border: solid 2px rgb(255, 255, 255);
+    background-color: blue;
+}
+
+.js:hover{
+    transition: 0.5s;
+    border: solid 2px rgb(255, 255, 255);
+    background-color: yellow;
+}
+
+.git:hover{
+    transition: 0.5s;
+    border: solid 2px rgb(255, 255, 255);
+    background-color: black;
+}
+
+.figma:hover{
+    transition: 0.5s;
+    border: solid 2px rgb(255, 255, 255);
+    background:linear-gradient(red,blue,green);
 }

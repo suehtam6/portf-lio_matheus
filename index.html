@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Matheus Lucas</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Portfolio - Matheus Lucas</title>
+
 </head>
 
 <body>
@@ -17,23 +21,22 @@
         <nav id="navbar">
             <ul id="nav-list">
                 <li class="nav-item active"><a href="#home">Home</a></li>
-                <li class="nav-item"><a href="#sobre"></a>Sobre Mim</li>
-                <li class="nav-item"><a href="#projetos"></a>Projetos</li>
-                <li class="nav-item"><a href="#tecnologias">Tecnologias</a></li>
+                <li class="nav-item"><a href="#sobre">Sobre Mim</a></li>
+                <li class="nav-item"><a href="#projetos">Projetos</a></li>
                 <li class="nav-item"><a href="#contatos">Contatos</a></li>
             </ul>
         </nav>
 
         <button class="btn">
-    <span class="icon">
-        <svg viewBox="0 0 175 80" width="40" height="40">
-            <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-            <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-            <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-        </svg>
-    </span>
-    <span class="text">MENU</span>
-</button>
+            <span class="icon">
+                <svg viewBox="0 0 175 80" width="40" height="40">
+                    <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                    <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                </svg>
+            </span>
+            <span class="text">MENU</span>
+        </button>
 
 
 
@@ -41,7 +44,7 @@
     <main>
         <section id="home">
             <div class="container_inicial">
-                <img src="./img/foto minha.jpg" alt="">
+                <img src="./img/foto minha.jpg" alt="" class="fotoMinha">
                 <div>
                     <span class="perfilSpan">Olá, eu me chamo</span>
                     <h1 class="perfilH1">Matheus Lucas</h1>
@@ -49,9 +52,38 @@
                 </div>
             </div>
         </section>
-        <section id="sobre">
-            <div></div>
 
+
+        <section id="sobre">
+            <div class="contariner_baixoMain">
+                <h1 class="titulo">Sobre Mim</h1>
+                <div class="container_sobreMim">
+                    <div class="quemSou">Quem sou</div>
+                    <div class="descricao">
+                        <p>Olá!! Eu me chamo Matheus e estou fazendo o curso técnico no Senai de Jandira, sou iniciante
+                            na
+                            área de desenvolvimento de sistemas, tenho conhecimentos em Java, Html, Css, JavaScript.</p>
+                    </div>
+                </div>
+
+                <div class="habilidades">
+                    <div class="tecnologias">Técnologias</div>
+                    <div class="icons">
+                        <div class="tech"><img src="./img/Java.png" alt="" class="java"></div>
+                        <div class="tech"><img src="./img/Html 5.png" alt="" class="html"></div>
+                        <div class="tech"><img src="./img/css3.png" alt="" class="css"></div>
+                        <div class="tech"><img src="./img/JavaScript.png" alt="" class="js"></div>
+                        <div class="tech"><img src="./img/GitHub.png" alt="" class="git"></div>
+                        <div class="tech"><img src="./img/figma.png" alt="" class="figma"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <div class="container_projeto">
+
+            </div>
         </section>
     </main>
 
