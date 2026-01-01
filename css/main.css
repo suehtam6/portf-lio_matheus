@@ -1,229 +1,217 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    transition: background-color 0.8s, color 0.8s;
-    background-color: #ffffff;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    background-color: #fff;
     overflow-x: hidden;
     text-align: center;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-#home{
-    width: 100%;
+
+#home {
     height: 100vh;
 }
 
-.container_inicial{
+.container_inicial {
     background-image: url(../img/fundo3.jpg);
-    background-position: center;
     background-size: cover;
-    width: 100%;
-    height: 100vh;
+    background-position: center;
+    height: 100%;
     display: flex;
-    gap: 20px;
-    justify-content:center;
     align-items: center;
-
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
 }
 
-.perfilSpan{
-    font-size: 50px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.perfilH1{
-    font-size: 70px;
-    font-weight: bold;
-    color: #238636;
-}
-
-.perfilH1:hover{
-    transition: 0.5s;
-    color: gold;
-}
-
-
-.container_inicial img{
-    width: 20vw;
-    height: 20vw;
+.container_inicial img {
+    width: clamp(150px, 20vw, 300px);
+    height: clamp(150px, 20vw, 300px);
     border-radius: 50%;
-    border: solid 3px rgb(255, 255, 255);
-    
+    border: 3px solid white;
 }
 
+.perfilSpan {
+    font-size: clamp(1.2rem, 3vw, 3rem);
+    color: white;
+}
 
-#sobre{
-    width: 100%;
-    height: 100vh;
-    display: flex;
+.perfilH1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: royalblue;
+}
+
+.perfilH1:hover {
+    color: gold;
+    transition: 0.3s;
+}
+
+#sobre {
     background-color: black;
+    padding: 80px 20px;
 }
 
-
-.titulo{
-    width: 100vw;
-    justify-content: center;
-    font-size: 30vh;
-    margin-top: 50px;
+.titulo,
+.tituloProjeto,
+.tituloContato {
+    font-size: clamp(3rem, 10vw, 12rem);
     background: linear-gradient(#666, #000);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.container_sobreMim{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-
-.quemSou{
-    font-size: 60px;
+.quemSou,
+.tecnologias {
+    font-size: clamp(2rem, 5vw, 4rem);
     color: #666;
-    font-weight: 800;
-    background-color:#000000;
-    
 }
 
-.descricao{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-.descricao p{
-    width: 50%;
-    height: 40vh;
-    text-align: center;
-    justify-content: center;
-    color: #ffffff;
-    font-size: 50px;
-    border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.541);
+.descricao p {
+    width: min(90%, 800px);
+    margin: auto;
+    font-size: clamp(1rem, 2vw, 2rem);
+    color: white;
+    background: rgba(255,255,255,0.4);
+    padding: 30px;
+    border-radius: 20px;
 }
 
 
-.habilidades{
-    width: 100%;
-    height: 50%;
-    background-color: #000;
-}
-.tecnologias{
-    color: #ffffff;
-    font-size: 60px;
-    margin-top: 50px;
-    font-weight: 800;
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 25px;
+    max-width: 800px;
+    margin: 40px auto 0;
+    justify-items: center;
 }
 
-.icons{
-    display: flex;
-    justify-content: center;
-    
-}
-.tech{
-    display: flex;
-    width: 100px;
-    height: 100px;
+.tech {
+    width: 110px;
+    height: 110px;
     background-color: #666;
-    margin: 20px;
-    border: solid 2px rgb(255, 255, 255);
-    margin-bottom: 10vh;
-}
-
-.tech img{
-    width: 100px;
-    height: 100px;
-}
-
-.java:hover{
-    transition: 0.5s;
-    border: solid 2px rgb(255, 255, 255);
-    background-color: red;
-}
-
-.html:hover{
-    transition: 0.5s;
-    border: solid 2px rgb(255, 255, 255);
-    background-color: orange;
-}
-
-.css:hover{
-    transition: 0.5s;
-    border: solid 2px rgb(255, 255, 255);
-    background-color: blue;
-}
-
-.js:hover{
-    transition: 0.5s;
-    border: solid 2px rgb(255, 255, 255);
-    background-color: yellow;
-}
-
-.git:hover{
-    transition: 0.5s;
-    border: solid 2px rgb(255, 255, 255);
-    background-color: black;
-}
-
-.figma:hover{
-    transition: 0.5s;
-    border: solid 2px rgb(255, 255, 255);
-    background:linear-gradient(red,blue,green);
-}
-
-#projetos{
-    width: 100%;
-    margin-top: 20vh;
-    height: 100vh;
+    border: 2px solid #fff;
+    border-radius: 10px;
     display: flex;
-    background-color: black;
-    flex-direction: column;
     align-items: center;
-    color: #ffffff;
-}
-
-.tituloProjeto{
-    
-    width: 100vw;
     justify-content: center;
-    font-size: 30vh;
-    background: linear-gradient(#666, #000);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
-.container_imagens{
-    display: flex;
-    justify-content: space-around;
-    margin: 50px;
+.tech:hover {
+    transform: translateY(-6px);
 }
 
-.projeto::before{
-    content: "Aperte e veja completo";
-    background-color: #0009;
+
+.tech img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.tech::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: 28px;
+    font-size: 14px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.tech:hover::after {
+    opacity: 1;
+}
+
+
+.tech .java:hover { background-color: #e76f00; }
+.tech .html:hover { background-color: #e34c26; }
+.tech .css:hover { background-color: #264de4; }
+.tech .js:hover { background-color: #f7df1e; color: black; }
+.tech .git:hover { background-color: #000; }
+.tech .figma:hover { background: linear-gradient(45deg, red, blue, green); }
+
+
+.nomes{
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    gap: 37px;
+    margin-top: 5px;
+}
+
+.nomeIcon{
+    background-color: #666;
+    border: #000 solid 2px;
+    width: 100px;
+}
+
+
+#projetos {
+    background-color: black;
+    padding: 80px 20px;
+}
+
+.container_imagens {
     display: grid;
-    place-content: center;
-    font-weight: 700;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.projeto {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid white;
+    display: block;
+}
+
+.projeto::before {
+    content: "Aperte e veja completo";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
     transform: translateY(100%);
-    transition: transform .5s;
+    transition: transform 0.4s ease;
 
+    z-index: 2;             
+    pointer-events: none;    
 }
 
-.projeto:hover::before{
-    transform: translateY(0%);
+.projeto:hover::before {
+    transform: translateY(0);
 }
 
-.projeto img{
-    width: 200px;
-    border: #ffffff solid 3px;
-    height: 200px;
+.projeto a {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    .container_inicial {
+        flex-direction: column;
+    }
+
 }
